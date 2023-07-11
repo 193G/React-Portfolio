@@ -1,0 +1,528 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: prompt;
+    src: url(./components/fonts/Prompt-Medium.ttf);
+}
+
+@font-face {
+    font-family: prompt-thin;
+    src: url(./components/fonts/Prompt-Thin.ttf);
+}
+
+#root {
+    display: block;
+}
+
+.header {
+    width: 100vw;
+    height: auto;
+    color: blue;
+    font-size: 20px;
+    display: flex;
+    position:fixed;
+    z-index: 2; /* Seting a higher z index to ensure that the header remains on top of all elements, in this case it is set to 2 because projects links are set to the z-index of 1 */
+    font-family: prompt;
+    align-items: center;
+    background-color: black;
+    
+}
+.header h1{
+    padding-left: 50px;
+    margin: auto;
+    font-size: 24px;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+nav {
+    width: 100%;  /* Setting width to 100% so that it occupies the whole width of the screen */
+    display: flex;
+    justify-content:right;
+    align-items: center;
+}
+ul { 
+    list-style: none;
+    margin-right: 50px;
+}
+li {
+    display:inline-flex;
+
+}
+li a{
+    display: inline;
+    float:right;
+    margin: 0 24px 0 24px;
+    padding-right: 24px;
+    padding-left: 24px;
+    text-decoration: none;
+    color: blue;
+}
+nav ul li a:hover {
+    color: black;
+    transform: scale(0.95);
+    transition: 0.2s;
+}
+
+/* HERO  */
+.hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row; /* displays elements in a row */
+
+}
+
+.social-links {
+    width: 100%;
+    display: flex;
+    flex-direction: row; /* displays elements in a column */
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+
+.social-links img {
+    height: 45px;
+    width: 45px;
+    padding: 10px;
+}
+.avatar {
+    width: 330px;
+    height: 440px; 
+    border: 3px solid blue;
+    background-color: white;
+    background-image: url(../public/assets/IMG_4046.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    border-radius: 50%;
+    position:relative;
+    margin-left: 50px;
+}
+.avatar:after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    right: -15px;
+    bottom: -15px;
+    border-radius: 50%;
+    border-top: 2px solid black;
+    border-left: 1px solid black;
+    z-index: -1;
+    background-color: #18191A; 
+    box-shadow: 5px 10px #888888;
+}
+.hero-caption{
+    height: auto;
+    width: 800px;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding-inline: 20px;
+    font-family: prompt-thin;
+    border-bottom:2px solid black;
+    border-right: 2px solid black;
+}
+
+.hero-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-caption h1 {
+    font-size: 50px;
+    font-size: 2.6vw;
+}
+
+#sub-heading {
+    font-size:40px;
+    color: blue;
+    margin-bottom:10px;
+}
+
+.button {
+    width: 200px;
+    height: 50px;
+    display:flex;
+    background-color:blue;
+    border-radius: 10px;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+    margin-block: 50px;
+}
+.button a {
+    font-family:prompt;
+    text-decoration: none;
+    color: black;
+    padding: 5px 50px 5px 50px;
+
+}
+.button:hover {
+    transform: translateY(-5px);
+    transition: 0.5s;
+}
+
+/* PROJECTS  */
+.project h1, .about-me h1, .contact-me h1{
+    text-align: center;
+    font-family: prompt-thin;
+    font-size: 50px;
+    text-decoration: underline;
+    text-decoration-color: blue;
+    text-underline-offset: 15px; /* positions the underline 15px downwards */
+}
+
+.project {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2px solid black;
+    margin-bottom: 50px;
+    padding-top: 100px;
+}
+.project-container {
+    width:80%;
+    height: 1100px;
+    display: flex;
+    margin-top: 70px;
+    flex-direction: column;
+}
+
+.link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+.project-1, .project-2, .project-3, .project-4, .project-5 {
+    display:flex;
+    align-items: flex-end;
+    border: 2px solid black;
+    border-radius: 15px;
+    position: relative;
+
+}
+.project-1{
+    height: 900px;
+    width: 100%;
+    border: 2px solid black;
+    background-image: url(../public/assets/exchangehub.png);
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+.project-1 h2, .project-2 h2, .project-3 h2, .project-4 h2, .project-5 h2{
+    font-family: prompt;
+    background-color: black;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    color: white;
+    padding-inline: 10px;
+
+}
+
+.sub-container, .sub-container-2 {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    display: flex;
+}
+
+.project-2 {
+    width: 65%;
+    height: 300px;
+    margin-right: 10px;
+    background-image: url(../public/assets/readsky.PNG);
+    background-size: contain;
+    background-repeat:no-repeat;
+
+}
+
+.project-3 {
+    width: 35%;
+    height: 300px;
+    background-image: url(../public/assets//airbnp.png);
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+.project-4 {
+    width: 40%;
+    height: 400px;
+    margin-right: 10px;
+    background-image: url(../public/assets/placeholder.png);
+    background-size: contain;
+    background-repeat:
+    no-repeat;
+}
+
+.project-5 {
+    width: 60%;
+    height: 400px;
+    background-image: url(../public/assets/placeholder.png);
+    background-size: contain;
+    background-repeat:no-repeat;
+}
+.project-1:hover, .project-2:hover, .project-3:hover, .project-4:hover, .project-5:hover {
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
+/* ABOUT ME  */
+.about-me {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding-top: 100px;
+}
+
+.abt-me-header {
+    width: 500px;
+    height: 200px;
+    border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me-content {
+    width: 100%;
+    height: 750px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;   
+ }
+
+
+.about-me-textbox {
+    width: min(600px, 50%);
+    height: 500px;
+    border-top: 2px solid blue;
+    border-left: 2px solid blue;
+    border-right: 2px solid blue;
+    text-align: center;
+    margin-inline: 20px 500px;
+    padding: 20px;
+    font-family: prompt-thin;
+}
+.about-me-textbox h2 {
+    font-family: prompt;
+    font-size: 50px;
+    margin: 20px 10px;
+    text-align: center;
+}
+
+/* CONTACT-ME */
+.contact-me {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 100px;
+}
+.contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.form-container {
+    color: blue;
+  width: 100%;
+  height: auto;
+  align-items: center; 
+      margin-inline: 20px;
+}
+.form-container b {
+    font-size: 24px;
+}
+.form-container h2 {
+    margin-bottom: 20px;
+}
+.form-container input {
+    height: 25px;
+}
+.form-container textarea {
+    height: 100px;
+}
+
+.submit-button {
+    border-radius: 5px;
+    color: white;
+    background-color: blue;
+}
+
+.login-details-container {
+    display: flex;
+    flex-direction: column;
+    outline: 2px solid black;
+    width: 90%;
+    height: auto;
+    padding: 20px;
+}
+.contact-info {
+    display: inline-block;
+    width: auto;
+    margin-inline: 20px;
+
+}
+
+#sendbtn {
+    margin-top: 20px;
+}
+
+.contact-me h2, .contact-info h1 {
+    margin-top: 50px;
+    text-align: center;
+    font-family: prompt-thin;
+    text-decoration: none;
+
+}
+
+ /* FOOTER */
+ .footer {
+    height: 120px;
+    width: 100vw;
+    position: absolute;
+    margin: auto;
+    background-color: #18191A; 
+    text-align: center;
+
+}
+.footer img {
+    width: 50px;
+    height: 50px;
+}
+
+.footer p {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 769px ) {
+
+    #root {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+   footer {
+    position:unset;
+    padding-top: 100px;
+   }
+    header{
+        margin-bottom: 100px;
+    }
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; /* Changing flex-direction property to column to better fit elements onto smaller 
+        screen sizes*/
+        padding-top: 100px;
+
+    }
+
+ 
+    .hero-container {
+        height: 1100px;
+        flex-direction: column;
+        margin: 600px 0 0 0; /* adjusting margins to suit smaller screen size */
+        text-align: center;
+    }
+    .social-links {
+        flex-direction: row;
+        width:100%;
+        height: 100px;
+        order: 1;
+    }
+    .social-links img {
+        margin-inline: 10px;
+    }
+    .social-links p {
+        writing-mode:horizontal-tb;
+    }
+    .hero-caption {
+        width: 650px;
+        height: 550px;
+        margin: 30px 0 0 0;
+        order: 1;
+    }
+
+    .button {
+        margin: auto;
+    }
+    .hero-caption h1 {
+        
+        font-size: 46px;
+    }
+
+    .hero-caption h2 {
+        font-size: 22px;
+        margin-bottom: 50px;
+    }
+    .project{
+        margin: 450px 0 0 0;
+      
+    }
+
+    .about-me-content{
+        flex-direction: column;
+        margin-top: 250px;
+    }
+
+    .about-me-textbox {
+        width: 500px;
+        margin: 50px 0 0 0;
+    }
+    .about-me-textbox h2{
+
+        font-size: 40px;
+    }
+    .about-me-textbox p{
+
+        font-size: 20px;
+    }
+
+    .contact-me{
+        margin: 350px 0 0 0;
+    }
+    
+    .sub-container, .sub-container-2 {
+        flex-direction: column;
+    }
+    .project-2, .project-3, .project-4, .project-5 {
+        height: 900px;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 0;
+
+    }
+
+}
