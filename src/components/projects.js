@@ -22,7 +22,7 @@ export default function Projects() {
 
             <figure className="project-3">
                 <h2> Project 3 Airbnp </h2>
-                <a href="https://readsky.herokuapp.com/" target="_blank">
+                <a href="https://airbnp-website-190a74645719.herokuapp.com" target="_blank">
                     <span className="link"></span></a> 
             </figure>
         </div>

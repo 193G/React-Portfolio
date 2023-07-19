@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.8de24bee.css",
+    "main.js": "/react-portfolio/static/js/main.916d506d.js",
+    "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/IMG_4046.png": "/react-portfolio/static/media/IMG_4046.07c8edb123d85676170c.png",
+    "static/media/exchangehub.png": "/react-portfolio/static/media/exchangehub.739ba05823cb6dbf8d4a.png",
+    "static/media/airbnp.png": "/react-portfolio/static/media/airbnp.84e2e72bf780ada5a3fb.png",
+    "static/media/Prompt-Medium.ttf": "/react-portfolio/static/media/Prompt-Medium.13aa547876aaa510c372.ttf",
+    "static/media/Prompt-Thin.ttf": "/react-portfolio/static/media/Prompt-Thin.66e8f822daf02e766079.ttf",
+    "static/media/readsky.PNG": "/react-portfolio/static/media/readsky.18a5528c92d1e6ecbe19.PNG",
+    "index.html": "/react-portfolio/index.html",
+    "main.8de24bee.css.map": "/react-portfolio/static/css/main.8de24bee.css.map",
+    "main.916d506d.js.map": "/react-portfolio/static/js/main.916d506d.js.map",
+    "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8de24bee.css",
+    "static/js/main.916d506d.js"
+  ]
+}
